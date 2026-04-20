@@ -1,0 +1,39 @@
+{
+  "name": "control-financiero",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "migrate": "prisma migrate dev",
+    "seed": "npx tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.0",
+    "next": "^16.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "25.6.0",
+    "@types/react": "19.2.14",
+    "@typescript-eslint/eslint-plugin": "^8.58.2",
+    "@typescript-eslint/parser": "^8.58.2",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^16.2.4",
+    "globals": "^17.5.0",
+    "postcss": "^8.4.38",
+    "prisma": "^5.12.0",
+    "tailwindcss": "^3.4.5",
+    "ts-node": "^10.9.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.6.0"
+  },
+  "prisma": {
+    "seed": "npx ts-node --transpile-only prisma/seed.ts"
+  }
+}
